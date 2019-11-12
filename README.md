@@ -1,18 +1,14 @@
+ 
 
-### Step 1: Clone this repository
+### Step 1: Create accounts and get access tokens.
 
-`git@github.com:spacebase/spacebasepantheon.git`
-`cd spacebasepantheon`
-
-### Step 2: Create accounts and get access tokens.
-
-In this step you will create accounts on Pantheon.io and CircleCI.com, installing Composer and Pantheon’s terminus, and getting access tokens to Github and CircleCI.
+In this step you will create accounts on Pantheon.io and CircleCI.com (we assume you have a github account already), then you will install Composer and Pantheon’s terminus, and get access tokens to Github and CircleCI.
 
 Follow this document precisely until you get to the point where you have access tokens:
 
 https://pantheon.io/docs/guides/build-tools#before-you-begin 
 
-That document should guide you to install composer (there is an easier set of instructions for mac users here); install Terminus; add your SSH public key to Pantheon; get keys for CircleCI and GitHub.
+That document should guide you to install composer ([there is an easier set of instructions for mac users here]()); install Terminus; add your SSH public key to Pantheon; get keys for CircleCI and GitHub.
 
 That document will tell you what permissions to give each access token - you need both a github token and a circle-ci token.
 
@@ -20,7 +16,7 @@ That document will tell you what permissions to give each access token - you nee
 
 You will now choose a sitename for your site and set up a few environment variables.
 
-Once you have the access tokens, enter them into your shell/terminal window.  NOTE: You cannot use capital letters in the SITENAME - pantheon will create a website for you and it doesn't like Capital letters in the sitename.  Your site might be "spacebase-test" or something like that.
+Once you have the access tokens, enter them into your shell/terminal window.  NOTE: You cannot use capital letters in the SITENAME - pantheon will create a website for you and it doesn't like Capital letters in the sitename.  Your sitename has to be unique on all of pantheon.
 
 Replace the your-thing strings with your tokens and sitename and run the following:
 
@@ -32,15 +28,22 @@ export SITENAME=choose-your-sitename`
 
 #### Step 4: Use `terminus` to clone our repository onto Pantheon so you can launch your Drupal site.
 
-Run exactly this command:
+Before you run terminus, verify that you are set up to use the correct accounts:
+
+`terminus auth:login`
+`terminus auth:whoami`
+
+Run exactly this terminus command:
 
 `terminus build:project:create --stability dev spacebase/spacebasepantheon $SITENAME 2>&1 | tee terminiuslog.txt`
 
-That command should do a lot: create a new GitHub repository and a new Pantheon demo site, integrated by CircleCI.
+That command should do a lot: 
+
+1) create a new GitHub repository and a new Pantheon demo site, integrated by CircleCI.
 
 Visit CircleCI - you should have a workflow now.
 Visit Github.com - you should have a repo with your sitename
-Visit Dashboard.pantheon.io - you should have a new pantheon site
+Visit Dashboard.pantheon.io - you should have a new pantheon site (unless you ran out of sandboxes)
 
 If you don't have all of those, read through terminuslog.txt to find where things went sideways, or run it again with option  `-vvv` to get more debug info.
 

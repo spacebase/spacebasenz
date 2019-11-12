@@ -49,6 +49,7 @@ If you don't have all of those, read through terminuslog.txt to find where thing
 
 
 
+The last lines of text should point you at your new github repository.
 
 #### Load the database at Pantheon and start using Drupal [ Easy Drupal ]
 

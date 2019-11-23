@@ -61,10 +61,14 @@ Import our database either in in Pantheon panel, or try terminus (we had problem
 terminus import:database $SITENAME.dev http://demo1.spacebase.co/dumpfile_less_content.sql
 
 Possibly useful commands:
-terminus drush $SITENAME.dev cr
-terminus drush $SITENAME.dev uli
+`terminus drush $SITENAME.dev cr`
+`terminus drush $SITENAME.dev uli`
+`terminus drush $SITENAME.dev updatedb`
 
 You’ve now got your working copy of the SpaceBase distribution. 
+
+Since our database is likely a bit date, you might want to set up your local dev environment and run composer update. Detailed instructs in the 'Lando' section
+below, which can act as a tutorial for other development work.
 
 PS: On GitHub, the top of the README.md should have your CircleCI, Pantheon dashboard and site (“dev” at Pantheon, use Pantheon tools to make it live.)
 
@@ -82,8 +86,12 @@ Bonus:  We used lando as our local dev environment. If you’d like to, we left 
 
 Install lando: https://docs.lando.dev/basics/installation.html
 
-cd web/sites/default
-cp settings.lando.php settings.local.php
+Then continuing from above:
+`git clone https://github.com/yourname/$SITENAME.git`
+`cd $SITENAME`
+`cd web/sites/default`
+This step is one of multiple options and might be not necessary:
+`cp settings.lando.php settings.local.php`
 lando start
 curl -O  http://demo1.spacebase.co/dumpfile_less_content.sql
 	(Or perhaps this will have moved … get the current database file.)
@@ -91,6 +99,10 @@ lando db-import dumpfile_less_content.sql
 
 Now you should have a local development environment that upgrades your code via
 CircleCI whenever you push your master branch to origin at Github. Have fun!
+
+Since our database is likely a bit date, you might want to start by running a
+composer update:
+`lando composer update`, commit the lock file `git add composer.lock`, commit, and push your master branch to origin at github.com. `git push origin master` goes to GitHub, where CircleCI will automatically do a composer install with your new composer.lock file and send to Pantheon.
 
 
 #### Commands we found useful

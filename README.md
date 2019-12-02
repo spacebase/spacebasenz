@@ -35,7 +35,9 @@ Before you run terminus, verify that you are set up to use the correct accounts:
 
 Run exactly this terminus command:
 
-`terminus build:project:create --stability dev spacebase/spacebasepantheon $SITENAME 2>&1 | tee terminiuslog.txt`
+`terminus build:project:create --stability dev spacebase/spacebasepantheon $SITENAME 2>&1 | tee terminuslog.txt`
+
+[ Note: We can hack the terminus program to keep the git history. Get the version of terminus stephen is using, then add `--preserve-local-repository`to above command. Solution is still under consideration.]  
 
 That command should do a lot: 
 

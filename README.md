@@ -16,8 +16,9 @@ We hope to make this very quickly available to anyone who’d like to use it: th
 
 History: The code is not locked to Pantheon, GitHub or CircleCI — SpaceBase started with GitLab, Platform.sh and Lando.
 
-Please follow the "Quick Start" below — this repository should be cloned using
-Terminus, not `git clone.`
+Please follow the "Quick Start" below to use our default
+Pantheon/GitHub/CircleCI tooling, in which case this repository 
+should be cloned using Terminus and not `git clone.` 
 
 
 
@@ -30,7 +31,7 @@ Or launch your own demo/site on Pantheon:
 
 ### Step 1: Create accounts and get access tokens.
 
-In this step you will create accounts on Pantheon.io and CircleCI.com (we assume you have a github account already), then you will install Composer and Pantheon’s terminus, and get access tokens to Github and CircleCI.
+In this step you will create accounts on Pantheon.io and CircleCI.com and GitHub.com as needed, then you will install Composer and Pantheon’s terminus, and get access tokens for Github and CircleCI.
 
 Follow this document precisely until you get to the point where you have access tokens:
 
@@ -130,10 +131,11 @@ curl -O  http://demo1.spacebase.co/dumpfile_less_content.sql
 	(Or perhaps this will have moved … get the current database file.)
 lando db-import dumpfile_less_content.sql
 
-Now you should have a local development environment that upgrades your code via
+Now you should now have a local development environment that updates your 
+Pantheon dev environment via
 CircleCI whenever you push your master branch to origin at Github. Have fun!
 
-Since our database is likely a bit date, you might want to start by running a
+Since our database is likely a bit dated, you might want to start by running a
 composer update:
 `lando composer update`, commit the lock file `git add composer.lock`, commit, and push your master branch to origin at github.com. `git push origin master` goes to GitHub, where CircleCI will automatically do a composer install with your new composer.lock file and send to Pantheon.
 

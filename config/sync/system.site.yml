@@ -1,0 +1,14 @@
+uuid: e7b3cbdb-3e45-45ae-8447-1e5baadcb284
+name: spacebasenz
+mail: stephencataldo@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

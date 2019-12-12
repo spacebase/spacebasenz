@@ -1,4 +1,32 @@
- 
+## SpaceBase's Community Directory OSS Release
+
+This opensource release is based on the work we did to create the <a
+href="https://spacebase.co">New Zealand Space Directory</a>: SpaceBase is a website for communities to collaborate on local content, and impact programs, and reports. 
+
+Within your community, internal groups will have their own presence, own resources and members. SpaceDirectory is built with Drupal 8, using composer, largely built around the Group module. 
+
+This repository merges SpaceBase with
+Pantheon's tools for integrating GitHub, Circle CI and Pantheon hosting. It is
+intended to allow you to launch a useable and extendible demo site of the
+SpaceBase code on Pantheon servers, with a good basic development workflow, and
+optionally using lando as your localhost environment —
+following quick and largely cut-and-paste set-up instructions. 
+
+We hope to make this very quickly available to anyone who’d like to use it: this repository aims to help you launch on a Pantheon test server with your own GitHub repository and a functional development workflow, right now, just by creating some accounts and cut-and-pasting commands.
+
+History: The code is not locked to Pantheon, GitHub or CircleCI — SpaceBase started with GitLab, Platform.sh and Lando.
+
+Please follow the "Quick Start" below — this repository should be cloned using
+Terminus, not `git clone.`
+
+
+
+
+See the original site: https://spacebase.co
+A linux-hosted demo: http://demo1.spacebase.co/
+Or launch your own demo/site on Pantheon:
+
+## Quick Start 
 
 ### Step 1: Create accounts and get access tokens.
 
@@ -12,7 +40,7 @@ That document should guide you to install composer ([there is an easier set of i
 
 That document will tell you what permissions to give each access token - you need both a github token and a circle-ci token.
 
-### Step 3: Add the access tokens to your current local environment
+### Step 2: Add the access tokens to your current local environment
 
 You will now choose a sitename for your site and set up a few environment variables.
 
@@ -26,7 +54,7 @@ export CIRCLE_TOKEN=yourtoken`
 export SITENAME=choose-your-sitename`
 ```
 
-#### Step 4: Use `terminus` to clone our repository onto Pantheon so you can launch your Drupal site.
+### Step 3: Use `terminus` to clone our repository onto Pantheon so you can launch your Drupal site.
 
 Before you run terminus, verify that you are set up to use the correct accounts:
 
@@ -35,7 +63,7 @@ Before you run terminus, verify that you are set up to use the correct accounts:
 
 Run exactly this terminus command:
 
-`terminus build:project:create --stability dev spacebase/spacebasepantheon $SITENAME 2>&1 | tee terminuslog.txt`
+`terminus build:project:create --stability dev spacebase/SpaceDirectory $SITENAME 2>&1 | tee terminuslog.txt`
 
 [ Note: We can hack the terminus program to keep the git history. Get the version of terminus stephen is using, then add `--preserve-local-repository`to above command. Solution is still under consideration.]  
 
@@ -53,7 +81,7 @@ If you don't have all of those, read through terminuslog.txt to find where thing
 
 The last lines of text should point you at your new github repository.
 
-#### Load the database at Pantheon and start using Drupal [ Easy Drupal ]
+### Step 4: Load the database at Pantheon and start using Drupal [ Easy Drupal ]
 
 We have a demo database here:
 http://demo1.spacebase.co/dumpfile_less_content.sql
@@ -76,13 +104,15 @@ PS: On GitHub, the top of the README.md should have your CircleCI, Pantheon dash
 
 So far you’ve created a new github repository in your personal account based on the config you exported into the shell, AND fired up a site at Pantheon. To do further work, you  need to clone your site on GitHub to a local environment.
 
+### Local Development
+
 #### Clone, edit, commit, push — and CircleCI   [ Drupal devel and Git ]
 
 To create a working localhost, clone your new repository that terminus created for you on GitHub (not on our template!)
 
 You can get that code running however you prefer on your localhost — or ignore localhost if you are simply checking out our site on a Pantheon demo. Make changes, commit, push to GitHub master branch— and then CircleCI is already set up to move your changes to Pantheon.
 
-### Local Development with Lando [Optional]
+#### Local Development with Lando [Optional]
 
 Bonus:  We used lando as our local dev environment. If you’d like to, we left the .lando.yml file for easy set up:
 
@@ -112,15 +142,18 @@ composer update:
 
 COMPOSER_MEMORY_LIMIT=-1 composer update
 
+## Pantheon notes follow:
 
+The following notes are lightly edited, based on the template provided by
+Pantheon. We integrated SpaceBase, instead of a more plain Drupal 8 site.
 
-## Workflow and hosting implementation
+### Workflow and hosting implementation
 
-(See: https://pantheon.io/docs/guides/drupal-8-commerce )
+See: https://pantheon.io/docs/guides/drupal-8-commerce 
 
-This repository is a reference implementation and start state for a modern Drupal 8 workflow utilizing [Composer](https://getcomposer.org/), Continuous Integration (CI), Automated Testing, and Pantheon. Even though this is a good starting point, you will need to customize and maintain the CI/testing set up for your projects — and are welcome to change who you use as your host or CI/testing provider.
+This repository is a reference implementation and start state for a modern Drupal 8 workflow (based on SpaceBase) utilizing [Composer](https://getcomposer.org/), Continuous Integration (CI), Automated Testing, and Pantheon. Even though this is a good starting point, you will need to customize and maintain the CI/testing set up for your projects — and are welcome to change who you use as your host or CI/testing provider.
 
-This repository is meant to be copied one-time by the the [Terminus Build Tools Plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin) but can also be used as a template [as this repository uses https://github.com/pantheon-systems/example-drops-8-composer/ as a template.] It should not be cloned or forked directly.
+This repository is meant to be copied one-time by the the [Terminus Build Tools Plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin) but can also be used as a template [as SpaceDirectory used  https://github.com/pantheon-systems/example-drops-8-composer/ as our template.] It should not be cloned or forked directly.
 
 The Terminus Build Tools plugin will scaffold a new project, including:
 
@@ -131,20 +164,20 @@ The Terminus Build Tools plugin will scaffold a new project, including:
 For more details and instructions on creating a new project, see the [Terminus Build Tools Plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin/).
 
 
-## Important files and directories
+### Important files and directories
 
-### `/web`
+#### `/web`
 
 Pantheon will serve the site from the `/web` subdirectory due to the configuration in `pantheon.yml`. This is necessary for a Composer based workflow. Having your website in this subdirectory also allows for tests, scripts, and other files related to your project to be stored in your repo without polluting your web document root or being web accessible from Pantheon. They may still be accessible from your version control project if it is public. See [the `pantheon.yml`](https://pantheon.io/docs/pantheon-yml/#nested-docroot) documentation for details.
 
-Other hosts such as Platform.sh can work with this configuration too.
+This is a standard Drupal composer setup, useable on other hosts as well.
 
 #### `/config`
 
 One of the directories moved to the git root is `/config`. This directory holds Drupal's `.yml` configuration files. In more traditional repo structure these files would live at `/sites/default/config/`. Thanks to [this line in `settings.php`](https://github.com/pantheon-systems/example-drops-8-composer/blob/54c84275cafa66c86992e5232b5e1019954e98f3/web/sites/default/settings.php#L19), the config is moved entirely outside of the web root.
 
 
-### `composer.json`
+#### `composer.json`
 This project uses Composer to manage third-party PHP dependencies.
 
 The `require` section of `composer.json` should be used for any dependencies your web project needs, even those that might only be used on non-Live environments. All dependencies in `require` will be pushed to Pantheon.
@@ -160,7 +193,7 @@ Third party Drupal dependencies, such as contrib modules, are added to the proje
 Non-Drupal dependencies are downloaded to the `/vendor` directory.
 
 
-### `.ci`
+#### `.ci`
 This `.ci` directory is where all of the scripts that run on Continuous Integration are stored. Provider specific configuration files, such as `.circle/config.yml` and `.gitlab-ci.yml`, make use of these scripts.
 
 The scripts are organized into subdirectories of `.ci` according to their function: `build`, `deploy`, or `test`.
@@ -211,12 +244,12 @@ here in the ReadMe are from Pantheon's setup.
   - `tests/behat/tests/behat/features/content.feature` A Behat test file which logs into the Drupal dashboard, creates nodes, users and terms, and verifies their existience in the Drupal admin interface and the front end of the site
 
 
-## Updating your Pantheon site
+### Updating your Pantheon site
 
 When using this repository to manage your Drupal site, you will no longer use the Pantheon dashboard to update your Drupal version. Instead, you will manage your updates using Composer. Ensure your site is in Git mode, clone it locally, and then run composer commands from there.  Commit and push your files back up to Pantheon as usual.
 
 
-## Overal approach to Drupal setup
+### Overall approach to Drupal setup
 
 We use composer as much as possible and aim for the standard approaches, with a /web directory. 
 
@@ -254,7 +287,7 @@ git commit -am 'Add the Devel module'
 git push
 ```
 
-## How does this starter kit differ from vanilla Drupal from Drupal.org?
+## Pantheon and composer: how does this differ from vanilla Drupal from Drupal.org?
 
 1. The `vendor` directory (where non-Drupal code lives) and the `config` directory
    (used for syncing configuration from development to production) are outside
@@ -263,36 +296,6 @@ git push
 2. The `settings.php` and `settings.platformsh.php` files are provided by
    default. The `settings.platformsh.php` file automatically sets up the database connection on Platform.sh, and allows controlling Drupal configuration from environment variables.
 
-NOTES:
-
-# SpaceBase Template Drupal Composer Pantheon
-
-These badges need rebuilding:
-
-[![CircleCI](https://circleci.com/gh/pantheon-systems/example-drops-8-composer.svg?style=shield)](https://circleci.com/gh/pantheon-systems/example-drops-8-composer)
-[![Pantheon example-drops-8-composer](https://img.shields.io/badge/dashboard-drops_8-yellow.svg)](https://dashboard.pantheon.io/sites/c401fd14-f745-4e51-9af2-f30b45146a0c#dev/code)
-[![Dev Site example-drops-8-composer](https://img.shields.io/badge/site-drops_8-blue.svg)](http://dev-example-drops-8-composer.pantheonsite.io/)
-
-
-This repository merges SpaceBase code for a Drupal-based community website with
-Pantheon's tools for integrating GitHub, Circle CI and Pantheon hosting. It is
-intended to allow you to launch a useable and extendible demo site of the
-SpaceBase code on Pantheon servers, with a good basic development workflow,
-very quickly and largely cut-and-paste. 
-
-Please follow the "Quick Start" below — this repository should be cloned using
-Terminus, not `git clone.`
-
-
-## Goals and Key Resources
-
-SpaceBase is a website for communities to collaborate  on local content, and impact programs, and reports. The original site is https://SpaceBase.co
-
-Within your community, internal groups will have their own presence, own resources and members.
-
-We hope to make this very quickly available to anyone who’d like to use it: this repository aims to help you launch on a Pantheon test server with your own GitHub repository and a functional development workflow, right now, just by creating some accounts and cut-and-pasting commands.
-
-History: The code is not locked to Pantheon, GitHub or CircleCI — SpaceBase started with GitLab, Platform.sh and Lando.
 
 #### The resources we used:
 
@@ -300,4 +303,4 @@ https://pantheon.io/docs/guides/drupal-8-commerce = Tutorial showing how to use 
 https://pantheon.io/docs/migrate-manual  Used to integrate our code and Pantheon code, while keeping our git history.
 
 
-## Quick Start 
+

@@ -4792,17 +4792,17 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "1.29.0",
+            "version": "1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "8.x-1.29"
+                "reference": "8.x-1.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.29.zip",
-                "reference": "8.x-1.29",
-                "shasum": "029d9e068d8f6a5db52434c27dc71bd3f06da487"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.30.zip",
+                "reference": "8.x-1.30",
+                "shasum": "1d7983e8e07feee4f13e4b05c9a10db15ae2097e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4813,16 +4813,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.29",
-                    "datestamp": "1536179280",
+                    "version": "8.x-1.30",
+                    "datestamp": "1576274288",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "patches_applied": {
-                    "8.x-1.29: honeypot defeated": "https://www.drupal.org/files/issues/2018-08-10/2811189-14.patch",
-                    "8.x-1.29: Server side token": "https://www.drupal.org/files/issues/2018-11-29/3002022-37.patch"
+                    "8.x-1.29: honeypot defeated": "https://www.drupal.org/files/issues/2018-08-10/2811189-14.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

@@ -6072,7 +6072,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "a0cc59bf001f1df3acd82348c28402c090148d93"
+                "reference": "ee47ca21b3dc7c3a2e5f209dfd2d93db53d39a5f"
             },
             "require": {
                 "drupal/core": "^8.5.0",
@@ -6084,8 +6084,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha5+17-dev",
-                    "datestamp": "1565712484",
+                    "version": "8.x-3.0-alpha5+18-dev",
+                    "datestamp": "1573491785",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6123,7 +6123,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
             },
-            "time": "2019-11-11T16:57:35+00:00"
+            "time": "2019-12-27T16:51:17+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -6188,17 +6188,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "2.12.0",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "8.x-2.12"
+                "reference": "8.x-2.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-8.x-2.12.zip",
-                "reference": "8.x-2.12",
-                "shasum": "e0992054ba1712bef3ab603d33e8a0d00ce6572b"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-8.x-2.13.zip",
+                "reference": "8.x-2.13",
+                "shasum": "f871e6652c3e1d848595e4688af45e437d4ae59b"
             },
             "require": {
                 "drupal/core": "^8.0"
@@ -6209,8 +6209,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.12",
-                    "datestamp": "1569507486",
+                    "version": "8.x-2.13",
+                    "datestamp": "1577477888",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

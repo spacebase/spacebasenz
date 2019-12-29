@@ -1,4 +1,4 @@
-name: spacedirectory
+name: spacebasenz
 recipe: drupal8
 proxy:
   mailhog:

@@ -570,6 +570,20 @@ function spacebase_core_send_new_content_notifications($module, $key, $node) {
   // Find the recipients who want their mail now,
   // and the mail template key: either Org Admins or Site Admins.
   $recipients = [];
+
+  // As of Drupal 8.8 20191231 (approximately), 
+  // this sometimes passes null and creates an error message.
+  // I expect the error message is the new thing for an old behavior.
+  if (! isset($node) ) {
+    \Drupal::logger('spacebase_core')->error("spacebase_core_send_new_content_notifications was called without a node. Called by module @module using key @key",
+      array(
+        '@module' => $module,
+        '@key' => $key,
+      )
+    );
+    return;
+  }
+
   $temp = GroupContent::loadByEntity($node); // {array}[0] for empty
   $group_content = array_shift($temp);
 

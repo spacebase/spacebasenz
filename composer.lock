@@ -3668,29 +3668,29 @@
         },
         {
             "name": "drupal/crop",
-            "version": "1.5.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/crop.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "7e948d35f5d8c0a24515d3b7e37391da4d0b19d8"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1516357085",
+                    "version": "8.x-2.0",
+                    "datestamp": "1578492183",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3705,6 +3705,10 @@
                 {
                     "name": "Drupal Media Team",
                     "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -5003,17 +5007,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.24.0",
+            "version": "1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "8.x-1.24"
+                "reference": "8.x-1.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.24.zip",
-                "reference": "8.x-1.24",
-                "shasum": "514727b58fc10f1ede3479404dc9e60380802e23"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.25.zip",
+                "reference": "8.x-1.25",
+                "shasum": "593eeee163b41fc9ae1d3c5d556899dfa1c3b01e"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5025,8 +5029,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.24",
-                    "datestamp": "1577743983",
+                    "version": "8.x-1.25",
+                    "datestamp": "1578485587",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6182,17 +6186,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "2.13.0",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "8.x-2.13"
+                "reference": "8.x-2.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-8.x-2.13.zip",
-                "reference": "8.x-2.13",
-                "shasum": "f871e6652c3e1d848595e4688af45e437d4ae59b"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-8.x-2.14.zip",
+                "reference": "8.x-2.14",
+                "shasum": "ad20134ed2bc7ca46238f7b4c05bbb7b82ab172a"
             },
             "require": {
                 "drupal/core": "^8.0"
@@ -6203,16 +6207,14 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.13",
-                    "datestamp": "1577477888",
+                    "version": "8.x-2.14",
+                    "datestamp": "1578493983",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "8.x-2.10: Integrate with group": "https://www.drupal.org/files/issues/2019-04-12/3041315-group-integration-2.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -7302,7 +7304,7 @@
                 "reference": "bd95554e9564c7fa5e9a4cbe33a64b9f471c7a86"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -7870,16 +7872,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "834593d5900615639208417760ba6a17299e2497"
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/834593d5900615639208417760ba6a17299e2497",
-                "reference": "834593d5900615639208417760ba6a17299e2497",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "shasum": ""
             },
             "require": {
@@ -7923,7 +7925,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-12-30T08:14:25+00:00"
+            "time": "2020-01-05T14:11:20+00:00"
         },
         {
             "name": "giggsey/libphonenumber-for-php",

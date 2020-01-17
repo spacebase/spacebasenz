@@ -3618,20 +3618,20 @@
         },
         {
             "name": "drupal/core_views_facets",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/core_views_facets.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/core_views_facets-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "f73fc66dc550df18f50b2aa30ad76352cbdf3655"
+                "url": "https://ftp.drupal.org/files/projects/core_views_facets-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "548e22b5d7267e74e8023afdd248126ac5c590d2"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8 || ^9",
                 "drupal/facets": "*"
             },
             "type": "drupal-module",
@@ -3640,8 +3640,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1536691380",
+                    "version": "8.x-1.1",
+                    "datestamp": "1579199583",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

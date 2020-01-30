@@ -3170,7 +3170,7 @@ tbody.collapse.in {
   margin-left: 2px;
   vertical-align: middle;
   border-top: 4px dashed;
-  border-top: 4px solid \	;
+  border-top: 4px solid \9;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent; }
 
@@ -3275,7 +3275,7 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px dashed;
-  border-bottom: 4px solid \	;
+  border-bottom: 4px solid \9;
   content: ""; }
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
@@ -8172,7 +8172,7 @@ body.path-search.topbar-open .main-container {
 @media screen and (min-width: 680px) and (max-width: 980px) {
   .path-search .region-content {
     display: grid;
-    grid-template-areas: "top" "middle"  "main"; }
+    grid-template-areas: "top"  "middle"  "main"; }
     .path-search .region-content .views-exposed-form {
       grid-area: top; }
       .path-search .region-content .views-exposed-form fieldset.form-item {
@@ -8188,7 +8188,7 @@ body.path-search.topbar-open .main-container {
 @media screen and (min-width: 980px) {
   .path-search .region-content {
     display: grid;
-    grid-template-areas: "top top top" "left main main"; }
+    grid-template-areas: "top top top"  "left main main"; }
     .path-search .region-content #block-industrysegment-2 {
       grid-area: left; }
     .path-search .region-content .views-element-container {
@@ -9821,6 +9821,8 @@ body.page-node-type-blog-post .text {
 .user-register #block-sociallogins {
   margin: 0 0 60px 0; }
 
+.region-navigation #block-donatebutton {
+  position: static; }
 .region-navigation .views-exposed-form {
   display: none;
   float: left;

@@ -15,6 +15,9 @@
 }
 
 .region-navigation {
+    #block-donatebutton {
+      position: static;
+    }
     .views-exposed-form {
         display: none;
         @media screen and (min-width:768px) {

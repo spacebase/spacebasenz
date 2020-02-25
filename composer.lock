@@ -6091,7 +6091,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "cf02be45e1dba9f6026c3ce12c098befb774d1ca"
+                "reference": "c8b946fa61ae636f18926905e3ed3ca12440927a"
             },
             "require": {
                 "drupal/core": "^8.5.0",
@@ -6103,8 +6103,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha5+19-dev",
-                    "datestamp": "1577465582",
+                    "version": "8.x-3.0-alpha5+20-dev",
+                    "datestamp": "1580150447",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6142,7 +6142,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
             },
-            "time": "2020-01-27T18:39:10+00:00"
+            "time": "2020-02-24T19:57:25+00:00"
         },
         {
             "name": "drupal/pathauto",

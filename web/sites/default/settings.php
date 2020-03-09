@@ -55,7 +55,7 @@ $settings['install_profile'] = 'standard';
  * This is part of our git commit, so we need to override 
  * Pantheon, lando, etc if they suggest putting it elsewhere
  */
-//Through 8.7: $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
-$settings['config_sync_directory'] =  '../config/sync';
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+
 
 

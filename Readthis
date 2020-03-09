@@ -1,4 +1,2 @@
 Note: Pantheon seems to fail when read-only files are changed in git. Need to
 explore this.
-
-Lets try in sftp mode the whole way. What does CircleCI do?

@@ -1,0 +1,2 @@
+Note: Pantheon seems to fail when read-only files are changed in git. Need to
+explore this.

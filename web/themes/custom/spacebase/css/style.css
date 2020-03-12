@@ -9822,7 +9822,7 @@ body.page-node-type-blog-post .text {
   margin: 0 0 60px 0; }
 
 .region-navigation #block-donatebutton {
-  position: static; }
+  clear: left; }
 .region-navigation .views-exposed-form {
   display: none;
   float: left;

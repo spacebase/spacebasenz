@@ -4604,17 +4604,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "e38c015a50d9eb7b156aab0a0a633068bd317dea"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "785bfb06a6684e3e310170aaacbfdaff46214052"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4626,8 +4626,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1576963383",
+                    "version": "8.x-1.9",
+                    "datestamp": "1585173153",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

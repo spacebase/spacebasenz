@@ -4502,17 +4502,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-2.9"
+                "reference": "8.x-2.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.9.zip",
-                "reference": "8.x-2.9",
-                "shasum": "d17350085350e88e6917e0e08a7af0333121d194"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.10.zip",
+                "reference": "8.x-2.10",
+                "shasum": "770ec22c07d9596f67d6db62d57bf25e10854474"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4534,8 +4534,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.9",
-                    "datestamp": "1582227067",
+                    "version": "8.x-2.10",
+                    "datestamp": "1585432602",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4604,17 +4604,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "785bfb06a6684e3e310170aaacbfdaff46214052"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "4d017d9dd4c27492c650ef8cae9ebdee9a20d191"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4626,8 +4626,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1585173153",
+                    "version": "8.x-1.10",
+                    "datestamp": "1585432867",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4858,20 +4858,20 @@
         },
         {
             "name": "drupal/image_widget_crop",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_widget_crop.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_widget_crop-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "0a61cfedc409c5ef448174f26060cd6c291d6a11"
+                "url": "https://ftp.drupal.org/files/projects/image_widget_crop-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "20f9e98bd6503699576ada6f4fd4c9fd06686361"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8 || ^9",
                 "drupal/crop": "^1.0 || ^2.0"
             },
             "require-dev": {
@@ -4879,8 +4879,7 @@
                 "drupal/ctools": "3.x-dev",
                 "drupal/entity_browser": "1.x-dev",
                 "drupal/file_entity": "*",
-                "drupal/inline_entity_form": "*",
-                "drupal/media": "*"
+                "drupal/inline_entity_form": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -4888,8 +4887,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1530698921",
+                    "version": "8.x-2.3",
+                    "datestamp": "1585408029",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4909,6 +4908,10 @@
                 {
                     "name": "Drupal media CI",
                     "homepage": "https://www.drupal.org/user/3057985"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -5020,17 +5023,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.27.0",
+            "version": "1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "8.x-1.27"
+                "reference": "8.x-1.28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.27.zip",
-                "reference": "8.x-1.27",
-                "shasum": "2cb92ee3b6ffb2517ccfb11a68f17209c5f0f621"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.28.zip",
+                "reference": "8.x-1.28",
+                "shasum": "bfc6b2e1ef971907f5424840af94055982994f56"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5042,8 +5045,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.27",
-                    "datestamp": "1584130185",
+                    "version": "8.x-1.28",
+                    "datestamp": "1585440188",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

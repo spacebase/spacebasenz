@@ -2502,7 +2502,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "c6dad46d22997c3f9c74ada91df536a057e6165e"
+                "reference": "408179776bd636542d75a2f00a3bc24e52210191"
             },
             "require": {
                 "drupal/calendar_datetime": "*",
@@ -2515,8 +2515,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+2-dev",
-                    "datestamp": "1585900968",
+                    "version": "8.x-1.0-alpha2+4-dev",
+                    "datestamp": "1585901571",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2559,7 +2559,7 @@
                 "source": "http://cgit.drupalcode.org/calendar",
                 "issues": "https://www.drupal.org/project/issues/calendar"
             },
-            "time": "2020-04-03T08:12:17+00:00"
+            "time": "2020-04-04T18:36:41+00:00"
         },
         {
             "name": "drupal/calendar_datetime",

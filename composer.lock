@@ -2518,8 +2518,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+15-dev",
-                    "datestamp": "1586540415",
+                    "version": "8.x-1.0-alpha2+16-dev",
+                    "datestamp": "1588081342",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6058,7 +6058,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "7258ae6b60f5b32230eaaf4b8ef48d61794b3bc8"
+                "reference": "99bcabb9e871891bb060de2726c34ba5a695dec4"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -6070,8 +6070,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha5+22-dev",
-                    "datestamp": "1583360636",
+                    "version": "8.x-3.0-alpha5+23-dev",
+                    "datestamp": "1586371727",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6109,7 +6109,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
             },
-            "time": "2020-04-08T18:48:24+00:00"
+            "time": "2020-05-01T13:07:28+00:00"
         },
         {
             "name": "drupal/pathauto",

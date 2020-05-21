@@ -3406,16 +3406,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.8.5",
+            "version": "8.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e22cfc3adf1dac7a92452287a7d8602f3c27b68f"
+                "reference": "a5daf2aa45bbc72da72e1e64d5261f746ffb508c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e22cfc3adf1dac7a92452287a7d8602f3c27b68f",
-                "reference": "e22cfc3adf1dac7a92452287a7d8602f3c27b68f",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a5daf2aa45bbc72da72e1e64d5261f746ffb508c",
+                "reference": "a5daf2aa45bbc72da72e1e64d5261f746ffb508c",
                 "shasum": ""
             },
             "require": {
@@ -3632,7 +3632,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-04-02T19:01:19+00:00"
+            "time": "2020-05-20T08:22:02+00:00"
         },
         {
             "name": "drupal/core_views_facets",
@@ -7150,32 +7150,30 @@
         },
         {
             "name": "drupal/twig_tweak",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "8.x-2.5"
+                "reference": "8.x-2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.5.zip",
-                "reference": "8.x-2.5",
-                "shasum": "077e193192d85706f5c5afc7575ba07b41499f79"
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "a877de315bbf8603f146b55e7ca345d8fe70e234"
             },
             "require": {
-                "drupal/core": "^8.7 || ^9.0"
+                "drupal/core": "^8.7 || ^9.0",
+                "twig/twig": "^1.41 || ^2.12"
             },
             "suggest": {
                 "symfony/var-dumper": "Better dump() function for debugging Twig variables"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.5",
-                    "datestamp": "1583937566",
+                    "version": "8.x-2.6",
+                    "datestamp": "1589992479",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

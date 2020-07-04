@@ -4764,7 +4764,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/group.git",
-                "reference": "2ed998a01466adde5e960243809dfa877e131676"
+                "reference": "43ef5806a3af1303b860938ed6e00f7c689bb77b"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -4777,8 +4777,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc5+24-dev",
-                    "datestamp": "1593436785",
+                    "version": "8.x-1.0-rc5+25-dev",
+                    "datestamp": "1593437480",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4810,7 +4810,7 @@
                 "source": "https://git.drupalcode.org/project/group",
                 "issues": "https://drupal.org/project/issues/group"
             },
-            "time": "2020-06-29T13:27:27+00:00"
+            "time": "2020-07-03T14:31:12+00:00"
         },
         {
             "name": "drupal/honeypot",

@@ -3401,16 +3401,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.1",
+            "version": "8.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e8ee964c562870381876e85d3f5eaaf8c8ecc9ee"
+                "reference": "8f0e24555c093669ce41edbb30637fe19df16802"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e8ee964c562870381876e85d3f5eaaf8c8ecc9ee",
-                "reference": "e8ee964c562870381876e85d3f5eaaf8c8ecc9ee",
+                "url": "https://api.github.com/repos/drupal/core/zipball/8f0e24555c093669ce41edbb30637fe19df16802",
+                "reference": "8f0e24555c093669ce41edbb30637fe19df16802",
                 "shasum": ""
             },
             "require": {
@@ -3628,7 +3628,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-06-17T17:57:48+00:00"
+            "time": "2020-07-08T18:53:45+00:00"
         },
         {
             "name": "drupal/core_views_facets",
@@ -4763,7 +4763,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/group.git",
-                "reference": "e8a6bbb4883c08c7c69a88d3715db3517e504e15"
+                "reference": "a2bec03475602fa3242994116d0b06c87cfecf42"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -4776,8 +4776,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc5+35-dev",
-                    "datestamp": "1594126775",
+                    "version": "8.x-1.0-rc5+36-dev",
+                    "datestamp": "1594132730",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4804,7 +4804,7 @@
                 "source": "https://git.drupalcode.org/project/group",
                 "issues": "https://drupal.org/project/issues/group"
             },
-            "time": "2020-07-07T14:29:05+00:00"
+            "time": "2020-07-08T10:26:21+00:00"
         },
         {
             "name": "drupal/honeypot",
@@ -12425,20 +12425,20 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451"
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0",
+                "php": "^5.3.3 || ^7.0 || ^8.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -12470,7 +12470,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-06-16T10:16:42+00:00"
+            "time": "2020-07-08T17:02:28+00:00"
         },
         {
             "name": "webmozart/path-util",

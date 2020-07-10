@@ -37,4 +37,3 @@ config:
   via: nginx
   webroot: web
   database: mariadb:10.1
-  drush: path:/app/vendor/bin/drush

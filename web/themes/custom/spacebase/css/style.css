@@ -9947,3 +9947,11 @@ body.page-node-type-blog-post .text {
     margin-left: -100%; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+/* Image block stuck on homepage — not ideal setup, quick fix */
+#block-whatwedo {
+  background-color: black;
+}

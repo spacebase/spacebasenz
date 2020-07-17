@@ -4160,32 +4160,35 @@
         },
         {
             "name": "drupal/entity",
-            "version": "dev-1.x",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "7b7fe7769ea370da5dfe28440b26ea99e49f59c3"
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "ac359ada43416ca3a8d0e44f2985b0a9fae07625"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0+4-dev",
-                    "datestamp": "1594150313",
+                    "version": "8.x-1.0",
+                    "datestamp": "1582735747",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4217,8 +4220,7 @@
             "homepage": "http://drupal.org/project/entity",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity"
-            },
-            "time": "2020-07-09T11:40:13+00:00"
+            }
         },
         {
             "name": "drupal/entity_reference_revisions",

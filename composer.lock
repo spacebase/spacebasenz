@@ -2498,7 +2498,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "565defd8255c56b30b4850ff17cfd8e12bae4040"
+                "reference": "9c03de76e7cfd9d6f6b63556ad55b55a5dc95e31"
             },
             "require": {
                 "drupal/calendar_datetime": "*",
@@ -2551,7 +2551,7 @@
                 "source": "https://git.drupalcode.org/project/calendar",
                 "issues": "https://www.drupal.org/project/issues/calendar"
             },
-            "time": "2020-05-27T11:44:41+00:00"
+            "time": "2020-07-20T19:08:34+00:00"
         },
         {
             "name": "drupal/calendar_datetime",
@@ -4765,7 +4765,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/group.git",
-                "reference": "22abc36b79f04a7165a9767cc49b284f4950c054"
+                "reference": "a9e1924e863425f83f00bf594018b4cec848fe27"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -4806,7 +4806,7 @@
                 "source": "https://git.drupalcode.org/project/group",
                 "issues": "https://drupal.org/project/issues/group"
             },
-            "time": "2020-07-15T10:10:40+00:00"
+            "time": "2020-07-20T16:14:29+00:00"
         },
         {
             "name": "drupal/honeypot",
@@ -6083,7 +6083,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "99bcabb9e871891bb060de2726c34ba5a695dec4"
+                "reference": "d6f1e1deed78a1ff5b9bdb365267df25f44fb0c9"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -6095,8 +6095,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha5+23-dev",
-                    "datestamp": "1586371727",
+                    "version": "8.x-3.0-beta1+3-dev",
+                    "datestamp": "1595207698",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6134,7 +6134,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
             },
-            "time": "2020-05-01T13:07:28+00:00"
+            "time": "2020-07-20T01:19:58+00:00"
         },
         {
             "name": "drupal/pathauto",

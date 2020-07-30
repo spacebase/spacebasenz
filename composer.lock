@@ -2498,7 +2498,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "9c03de76e7cfd9d6f6b63556ad55b55a5dc95e31"
+                "reference": "818982e488e97285c0d84970a6502f002d242a07"
             },
             "require": {
                 "drupal/calendar_datetime": "*",
@@ -2511,8 +2511,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+17-dev",
-                    "datestamp": "1590579906",
+                    "version": "8.x-1.0-alpha2+18-dev",
+                    "datestamp": "1595272142",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2522,7 +2522,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2551,7 +2551,7 @@
                 "source": "https://git.drupalcode.org/project/calendar",
                 "issues": "https://www.drupal.org/project/issues/calendar"
             },
-            "time": "2020-07-20T19:08:34+00:00"
+            "time": "2020-07-29T11:50:36+00:00"
         },
         {
             "name": "drupal/calendar_datetime",

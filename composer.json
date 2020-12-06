@@ -239,9 +239,6 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
-        "platform": {
-            "php": "7.3.22"
-        },
         "discard-changes": true
     }
 }

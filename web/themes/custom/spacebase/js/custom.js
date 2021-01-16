@@ -77,11 +77,11 @@
         return false;
       });
 
-      $('.icon-blocks').on(clickTap, function (e) {
-        e.stopImmediatePropagation();
-        $('.user-dropdown').fadeOut(300);
-        $('.main-nav').find('.region-navdropdown').fadeToggle(300);
-      });
+      // $('.icon-blocks').on(clickTap, function (e) {
+      //   e.stopImmediatePropagation();
+      //   $('.user-dropdown').fadeOut(300);
+      //   $('.main-nav').find('.region-navdropdown').fadeToggle(300);
+      // });
 
       $(document).click(function(e){
         $('.user-dropdown').fadeOut(300);

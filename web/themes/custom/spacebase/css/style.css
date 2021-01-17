@@ -7074,7 +7074,7 @@ body[class*="user-reset"] {
       padding: 12px 0 0 !important; }
       @media screen and (max-width: 767px) {
         .navbar.navbar-inverse .menu.menu--account {
-          padding: 18px 0 0 !important; }
+          padding: 0 0 15px !important; }
           .navbar.navbar-inverse .menu.menu--account li a {
             font-size: 13px; }
             .navbar.navbar-inverse .menu.menu--account li a.btn {
@@ -10166,6 +10166,9 @@ body.page-node-type-blog-post .text {
 .navbar .btn {
   margin: 2px 10px; }
 
+#block-spacebase-account-menu {
+  display: contents; }
+
 #block-exposedformsearch-3page-1 .form--inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10238,7 +10241,8 @@ body.page-node-type-blog-post .text {
     display: none !important; }
   #block-spacebase-account-menu-menu {
     height: auto;
-    position: relative; }
+    position: relative;
+    display: none; }
   .navbar-toggle {
     margin-top: 25px; }
   .region-navigation-collapsible {

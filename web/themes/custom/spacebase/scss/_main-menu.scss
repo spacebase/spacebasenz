@@ -13,6 +13,10 @@
   margin: 2px 10px;
 }
 
+#block-spacebase-account-menu {
+  display: contents;
+}
+
 
 #block-exposedformsearch-3page-1 .form--inline {
   display: flex;
@@ -93,6 +97,7 @@
   #block-spacebase-account-menu-menu {
     height:auto;
     position: relative;
+    display: none;
   }
 
   .navbar-toggle {

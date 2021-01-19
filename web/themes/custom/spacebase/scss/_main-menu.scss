@@ -85,7 +85,14 @@
   margin-right: 11px;
 }
 
+body.path-search .main-container {
+  padding-top: 157px;
+}
+
 @media only screen and (max-width: 767px) {
+  body.path-search .main-container {
+    padding-top: 238px;
+  }
   .navbar-toggle {
     display:block !important;
   }

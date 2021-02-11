@@ -9977,6 +9977,10 @@ body.page-node-type-blog-post .text {
     width: 100%;
     height: 100%; }
 
+.path-news .main-container.container.js-quickedit-main-content,
+.path-videos .main-container.container.js-quickedit-main-content {
+  padding-top: 9%; }
+
 .news-list .views-row {
   padding: 10px 0 30px; }
 

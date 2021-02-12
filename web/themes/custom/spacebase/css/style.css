@@ -7074,7 +7074,7 @@ body[class*="user-reset"] {
       padding: 12px 0 0 !important; }
       @media screen and (max-width: 767px) {
         .navbar.navbar-inverse .menu.menu--account {
-          padding: 0 0 15px !important; }
+          padding: 10px 0 15px !important; }
           .navbar.navbar-inverse .menu.menu--account li a {
             font-size: 13px; }
             .navbar.navbar-inverse .menu.menu--account li a.btn {
@@ -7084,8 +7084,8 @@ body[class*="user-reset"] {
       .navbar.navbar-inverse .menu.menu--account > li {
         display: inline-block; }
   .navbar .btn {
-    font-size: 14px;
-    padding: 10px 15px; }
+    font-size: 12px;
+    padding: 7px 10px; }
     @media screen and (min-width: 768px) {
       .navbar .btn {
         margin: 5px 10px; } }
@@ -9982,6 +9982,18 @@ body.page-node-type-blog-post .text {
 .path-videos .main-container.container.js-quickedit-main-content {
   padding-top: 9%; }
 
+@media only screen and (max-width: 767px) {
+  .region-navigation #block-donatebutton {
+    margin: 10px 0 0px 0; }
+  .region-navigation #block-donatebutton {
+    clear: none; }
+  .services.path-node .main-container.container.js-quickedit-main-content,
+  .path-news .main-container.container.js-quickedit-main-content,
+  .path-videos .main-container.container.js-quickedit-main-content {
+    padding-top: 49%; }
+  #navbar {
+    padding: 0; } }
+
 .news-list .views-row {
   padding: 10px 0 30px; }
 
@@ -10278,12 +10290,16 @@ body.path-search .main-container {
   #block-donatebutton p {
     text-align: center; }
   #block-donatebutton p a {
-    margin-left: auto !important;
-    margin-right: auto; }
+    margin-left: auto !important; }
   .navbar.navbar-inverse .menu.menu--account > li {
-    min-width: 30%; }
+    min-width: 29%; }
+  .navbar.navbar-inverse .menu.menu--account li a {
+    font-size: 10px; }
+  .navbar.navbar-inverse .menu.menu--account li a.btn {
+    margin: 0 5px 0 0 !important;
+    padding: 5px; }
   #navbar {
-    padding: 15px 0px 5px 0px; } }
+    padding: 2px 0px 5px 0px; } }
 
 /*** Rewrite menu ends **/
 

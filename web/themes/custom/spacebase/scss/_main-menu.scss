@@ -137,16 +137,27 @@ body.path-search .main-container {
   #block-donatebutton p{
     text-align: center;
   }
-  #block-donatebutton p a{
+  #block-donatebutton p a {
     margin-left: auto !important;
-    margin-right: auto;
+    //margin-right: -30%;
   }
   .navbar.navbar-inverse .menu.menu--account > li {
-    min-width: 30%;
+    min-width: 29%;
   }
+  .navbar.navbar-inverse .menu.menu--account li a {
+    font-size: 10px;
+  }
+  .navbar.navbar-inverse .menu.menu--account li a.btn {
+    margin: 0 5px 0 0 !important;
+    padding: 5px;
+  }
+ // .navbar.navbar-inverse .menu.menu--account {
+ //   padding: 0 0 15px !important;
+  //  padding-left: 22% !important;
+ // }
 
   #navbar {
-    padding: 15px 0px 5px 0px;
+    padding: 2px 0px 5px 0px;
   }
 
 }

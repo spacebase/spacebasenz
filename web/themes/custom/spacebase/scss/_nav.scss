@@ -73,7 +73,7 @@
         float: right !important;
         padding: 12px 0 0 !important;
         @media screen and (max-width: 767px) {
-          padding: 0 0 15px !important;
+          padding: 10px 0 15px !important;
           li{
             a{
               font-size: 13px;
@@ -92,8 +92,10 @@
     }
   }
   .btn{
-    font-size: 14px;
-    padding: 10px 15px;
+    font-size: 12px;
+    padding: 7px 10px;
+    //font-size: 14px;
+    //padding: 10px 15px;
     @media screen and (min-width: 768px) {
       margin: 5px 10px;
     }

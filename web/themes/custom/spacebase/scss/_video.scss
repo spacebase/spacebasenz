@@ -67,3 +67,20 @@
 .path-videos .main-container.container.js-quickedit-main-content {
   padding-top: 9%
 }
+
+@media only screen and (max-width: 767px) {
+  .region-navigation #block-donatebutton {
+    margin: 10px 0 0px 0;
+  }
+  .region-navigation #block-donatebutton {
+    clear: none;
+  }
+  .services.path-node .main-container.container.js-quickedit-main-content,
+  .path-news .main-container.container.js-quickedit-main-content,
+  .path-videos .main-container.container.js-quickedit-main-content {
+    padding-top: 49%;
+  }
+  #navbar {
+    padding: 0;
+  }
+}

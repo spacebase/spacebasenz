@@ -9992,7 +9992,9 @@ body.page-node-type-blog-post .text {
   .path-videos .main-container.container.js-quickedit-main-content {
     padding-top: 49%; }
   #navbar {
-    padding: 0; } }
+    padding: 0; }
+  .video-list .video-column {
+    width: 100%; } }
 
 .news-list .views-row {
   padding: 10px 0 30px; }

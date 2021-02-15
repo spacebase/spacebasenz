@@ -9994,7 +9994,7 @@ body.page-node-type-blog-post .text {
   #navbar {
     padding: 0; }
   .video-list .video-column {
-    width: 100%; } }
+    width: 100% !important; } }
 
 .news-list .views-row {
   padding: 10px 0 30px; }

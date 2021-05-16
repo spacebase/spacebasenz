@@ -1,0 +1,11 @@
+uuid: 81c7fa9d-9615-4843-9bc4-8656a7f454b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: spacebase_timeline
+title: 'SpaceBase Timeline'
+content:
+  value: "<div class=\"sb-timeline row\">\r\n<div class=\"col-md-4\">\r\n<h3>Our History</h3>\r\n\r\n<p>SpaceBase was founded in 2016 by Emeline Paat-Dahlstrom and Eric Dahlstrom.&nbsp; In 2017, Rich Bodo signed on, the team joined the first cohort of the Edmund Hillary Fellowship, and SpaceBase Limited was founded.</p>\r\n\r\n<p>We established SpaceBase, as an LLC, but we run it as an impact organization with a charitable constitution.&nbsp; Our success is not measured as profit. &nbsp;Read our <a href=\"https://spacebase.co/node/372\">Impact Report 2019</a>.&nbsp;&nbsp;</p>\r\n</div>\r\n\r\n<div class=\"col-md-4\">\r\n<h3>Today</h3>\r\n\r\n<p>Today we are collaborating with the space community in New Zealand to:</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Establish educational programs that we can iterate on and improve.&nbsp; The New Zealand Space Challenge is an example of that.&nbsp; We are active in promoting relevant gatherings and space activities countrywide.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Build our directory system.&nbsp; This will allow us, together, to take an inventory of where we are, connect with one another, collect feedback, and plan out our next steps.&nbsp;</p>\r\n\t</li>\r\n</ul>\r\n</div>\r\n\r\n<div class=\"col-md-4\">\r\n<h3>Roadmap</h3>\r\n\r\n<p>We continue to collaborate and partner with local stakeholders, support space educational initiatives, and establish mentorship and consulting services in New Zealand and abroad to grow a democratized space economy.&nbsp;</p>\r\n\r\n<p>Join us in catalyzing the space ecosystem in New Zealand and beyond. We would love to hear from you. Reach us at <a href=\"mailto:feedback@spacebase.co\">feedback@spacebase.co</a>. We're looking forward to hearing from you.</p>\r\n</div>\r\n</div>\r\n"
+  format: full_html

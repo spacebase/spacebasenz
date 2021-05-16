@@ -1,0 +1,165 @@
+/** Rewrite Menu starts here ****/
+
+.navbar-toggle {
+  display:none !important;
+}
+
+.navbar.navbar-inverse .menu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar .btn {
+  margin: 2px 10px;
+}
+
+#block-spacebase-account-menu {
+  display: contents;
+}
+
+
+#block-exposedformsearch-3page-1 .form--inline {
+  display: flex;
+  align-items: center;
+}
+#block-exposedformsearch-3page-1 {
+  margin-top: 15px;
+}
+
+#block-donatebutton {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.menu--account {
+  margin-right: 25px;
+  margin-top: 28px;
+}
+
+#navbar {
+  padding: 15px 0px 5px 25px;
+}
+.user-nav .nav-link img {
+  border-radius: 50%;
+}
+
+.user-nav .user-dropdown > li {
+  margin: 15px auto;
+}
+
+.user-nav .user-dropdown > li a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #315ce6;
+}
+
+.user-nav .user-dropdown {
+  list-style: none;
+  padding: 15px;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  left: -150px;
+}
+.user-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-nav span.username,
+.block-views-blockuser-nav-block-1 .user-nav .user-dropdown {
+  display:none;
+}
+
+#block-views-block-user-nav-block-1,
+.region-navigation .block-private-message-notification-block {
+  float:right;
+  margin-top: 12px;
+  margin-right: 25px;
+}
+
+.navbar-nav > li {
+  margin-right: 11px;
+}
+
+body.path-search .main-container {
+  padding-top: 157px;
+}
+
+@media only screen and (max-width: 767px) {
+  body.path-search .main-container {
+    padding-top: 238px;
+  }
+  .navbar-toggle {
+    display:block !important;
+  }
+
+  .region-navigation .menu--main {
+    display:none !important;
+  }
+
+  #block-spacebase-account-menu-menu {
+    height:auto;
+    position: relative;
+    display: none;
+  }
+
+  .navbar-toggle {
+    margin-top: 25px;
+  }
+
+  .region-navigation-collapsible {
+    padding-top: 30px;
+  }
+
+  .region-navigation-collapsible .menu {
+    display: unset !important;
+  }
+
+  .menu--account{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+
+  #block-donatebutton {
+    display: block;
+  }
+
+  #block-donatebutton p{
+    text-align: center;
+  }
+  #block-donatebutton p a {
+    margin-left: auto !important;
+    //margin-right: -30%;
+  }
+  .navbar.navbar-inverse .menu.menu--account > li {
+    min-width: 29%;
+  }
+  .navbar.navbar-inverse .menu.menu--account li a {
+    font-size: 10px;
+  }
+  .navbar.navbar-inverse .menu.menu--account li a.btn {
+    margin: 0 5px 0 0 !important;
+    padding: 5px;
+  }
+ // .navbar.navbar-inverse .menu.menu--account {
+ //   padding: 0 0 15px !important;
+  //  padding-left: 22% !important;
+ // }
+
+  #navbar {
+    padding: 2px 0px 5px 0px;
+  }
+
+}
+
+/*** Rewrite menu ends **/

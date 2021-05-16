@@ -1,0 +1,22 @@
+uuid: cc940024-7c4e-404f-a4ce-64952eae95f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_embed
+    - node.type.page
+  module:
+    - video_embed_field
+id: node.page.field_video_embed
+field_name: field_video_embed
+entity_type: node
+bundle: page
+label: 'Video Embed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers: {  }
+field_type: video_embed_field

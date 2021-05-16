@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var importer = require('node-sass-globbing');
-var plumber = require('gulp-plumber');  
+var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 
 var sass_config = {
@@ -20,7 +20,7 @@ var sass_config = {
 gulp.task('browser-sync', function(done) {
     browserSync.init({
         injectChanges: true,
-        proxy: "spacebase.lndo.site"
+        proxy: "spacebasenz.lndo.site:8000"
     });
     gulp.watch("./scss/*.scss", gulp.task(["sass"]));
     gulp.watch(['./css/style.css']).on('change', browserSync.reload);

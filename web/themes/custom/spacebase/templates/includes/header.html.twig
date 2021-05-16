@@ -10,12 +10,12 @@
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-      
+
         <div>
       {% if page.branding %}
         {{ page.branding }}
       {% endif %}
-      
+
       <div class="navbar-header">
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
@@ -26,26 +26,26 @@
             <span class="icon-bar"></span>
           </button>
         {% endif %}
-        
+
         <div class="main-nav">
-          <button type="button" class="icon-blocks pull-right">
-            <span class="sr-only">{{ 'Toggle dropdown'|t }}</span>
-            <span class="icon-block-row">
-              <span class="icon-block"></span>
-              <span class="icon-block"></span>
-              <span class="icon-block"></span>
-            </span>
-            <span class="icon-block-row">
-              <span class="icon-block"></span>
-              <span class="icon-block"></span>
-              <span class="icon-block"></span>
-            </span>
-            <span class="icon-block-row">
-              <span class="icon-block"></span>
-              <span class="icon-block"></span>
-              <span class="icon-block"></span>
-            </span>
-          </button>
+{#          <button type="button" class="icon-blocks pull-right">#}
+{#            <span class="sr-only">{{ 'Toggle dropdown'|t }}</span>#}
+{#            <span class="icon-block-row">#}
+{#              <span class="icon-block"></span>#}
+{#              <span class="icon-block"></span>#}
+{#              <span class="icon-block"></span>#}
+{#            </span>#}
+{#            <span class="icon-block-row">#}
+{#              <span class="icon-block"></span>#}
+{#              <span class="icon-block"></span>#}
+{#              <span class="icon-block"></span>#}
+{#            </span>#}
+{#            <span class="icon-block-row">#}
+{#              <span class="icon-block"></span>#}
+{#              <span class="icon-block"></span>#}
+{#              <span class="icon-block"></span>#}
+{#            </span>#}
+{#          </button>#}
           {% if page.navdropdown %}
             {{ page.navdropdown }}
           {% endif %}
@@ -53,8 +53,8 @@
         {% if page.navigation %}
           {{ page.navigation }}
         {% endif %}
-      <i class="search-icon pull-right fas fa-search"></i>
-      
+{#      <i class="search-icon pull-right fas fa-search"></i>#}
+
       </div>
 
       {# Navigation (collapsible) #}

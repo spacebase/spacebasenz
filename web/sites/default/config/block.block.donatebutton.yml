@@ -1,0 +1,25 @@
+uuid: 7d98332a-ce24-4e83-a259-49e916f7adc3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:9c46e597-e0c9-4836-8ad4-76e7bd9e3e0b'
+  module:
+    - block_content
+  theme:
+    - spacebase
+id: donatebutton
+theme: spacebase
+region: navigation
+weight: -22
+provider: null
+plugin: 'block_content:9c46e597-e0c9-4836-8ad4-76e7bd9e3e0b'
+settings:
+  id: 'block_content:9c46e597-e0c9-4836-8ad4-76e7bd9e3e0b'
+  label: 'Donate Button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

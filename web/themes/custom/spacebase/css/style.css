@@ -9103,10 +9103,12 @@ article.forum-comment {
     color: #fec61c; }
 
 .page-node-type-group-forum-topic .field--name-field-pin-to-top {
-  display: none; }
-  .page-node-type-group-forum-topic .field--name-field-pin-to-top input[type="checkbox"] {
+  display: none;
+}
+.page-node-type-group-forum-topic .field--name-field-pin-to-top input[type="checkbox"] {
     position: static;
-    margin: 0; }
+    margin: 0;
+}
 
 .page-node-type-group-forum-topic .submitted {
   color: #76777f;

@@ -1,0 +1,11 @@
+uuid: cfcfe107-a4f2-4d99-a832-7663f964eac2
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: nz_sky_photo
+title: 'SpaceBase Patrons'
+content:
+  value: "<h1>Patron&nbsp;</h1>\r\n\r\n<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jenny Sutton &amp; Greenlight Ventures NZ</h3>\r\n<img alt=\"Greenlight Ventures\" data-align=\"center\" data-entity-type=\"file\" data-entity-uuid=\"982731a1-38c3-4053-9d78-4d63f9ee14df\" src=\"/sites/default/files/JS greenlight ventures logo 2019.png\" />\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: full_html

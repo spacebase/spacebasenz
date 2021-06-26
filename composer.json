@@ -206,9 +206,6 @@
             },
             "drupal/nocaptcha_recaptcha" : {
                 "Validator has json_decode error": "./web/validator_json_decode_error-2981948-1.patch"
-            },
-            "drupal/leaflet_more_maps": {
-                "8.x-1.0-alpha3: Invalid agrument": "https://www.drupal.org/files/issues/lmm_2847024-9.patch"
             }
         },
         "build-env": {

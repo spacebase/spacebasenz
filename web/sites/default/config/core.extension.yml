@@ -62,7 +62,6 @@ module:
   leaflet_views: 0
   link: 0
   mail_edit: 0
-  mailgun: 0
   mailsystem: 0
   markup: 0
   media: 0
@@ -112,6 +111,7 @@ module:
   search_api_db: 0
   search_api_db_defaults: 0
   search_api_solr: 0
+  sendgrid_integration: 0
   serialization: 0
   shortcut: 0
   simple_block: 0
